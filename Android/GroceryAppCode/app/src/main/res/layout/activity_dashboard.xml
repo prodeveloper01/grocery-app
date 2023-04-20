@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:background="@color/back_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/FramFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llManu"/>
+    <LinearLayout
+        android:id="@+id/llManu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_home" />
+            <TextView
+                android:id="@+id/tvHome"
+                fontPath="@string/font_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ivHome"
+                android:textColor="@color/gray"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:textSize="@dimen/_7ssp"
+                tools:ignore="MissingPrefix" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_search" />
+            <TextView
+                android:id="@+id/tvSearch"
+                fontPath="@string/font_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ivSearch"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_7ssp"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                tools:ignore="MissingPrefix" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlFavourite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivFavourite"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_heart"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+            <TextView
+                android:id="@+id/tvFavourite"
+                fontPath="@string/font_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favourites"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ivFavourite"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_7ssp"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                tools:ignore="MissingPrefix" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivOrder"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_orderhistory" />
+            <TextView
+                android:id="@+id/tvOrderHistory"
+                fontPath="@string/font_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_orders"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ivOrder"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_7ssp"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                tools:ignore="MissingPrefix" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/ivSetting"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_settings"
+                />
+            <TextView
+                android:id="@+id/tvSetting"
+                fontPath="@string/font_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ivSetting"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_7ssp"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                tools:ignore="MissingPrefix" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

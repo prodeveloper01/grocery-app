@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Gravity Infotech - Single Grocery Store Android User & Delivery Boy Application With Admin Panel - Documentation</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Gravity Infotech - Single Grocery Store Android User & Delivery Boy Application With Admin Panel - Documentation">
+    <meta name="author" content="Gravity Infotech">    
+    <link rel="shortcut icon" href="favicon.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="#"><img class="logo-icon mr-2" src="assets/images/logo.png" alt="logo" width="60px"><span class="logo-text">Gravity<span class="text-alt"> Infotech</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Admin configuration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">SQL Database Setup</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Google Maps Setup</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Firebase Setup</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Change Currency</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Payment Method</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-6">Change Timezone</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7">Email Configuration</a></li>
+
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>Install Android studio</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>SDK Manager</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Importing Android Project</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>User App Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Change App Name</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Change Package Name</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Change Color Scheme</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-4">Change Theme of Application</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-5">Change App Icon</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-6">Change API Links</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-8">Change Firebase google services Json</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>User App Social Login Configuration</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Facebook</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Google</a></li>
+
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Driver App Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Change App Name</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Change Package Name</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Change Color Scheme</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-4">Change Theme of Application</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-5">Change App Icon</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-6">Change API Links</a></li>
+
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Firebase Configuration</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 20 April 2021</span></h1>
+					    <section class="docs-intro">
+						    <p>Thank you for purchasing our app</p>
+						    <p>Please read the documentation carefully , and if you have any question mail us at <a class="scrollto" href="mailto:infotechgravity@gmail.com">"infotechgravity@gmail.com"</a>. Most pages are accompanied by a video tutorial , it's recommended to check both , the video and the written Documentation . 
+						        
+					        <h4 id="phainc-theme-addons">Must Read this:</h4>
+					        <ul>
+					        	<li>Admin is in PHP 7.2 and it will work on any kind of hosting (PHP Supported) packages </li>
+					        	<li>
+					        		If you have purchased Regular License then Purchase key will only be used once.
+					        	</li>
+					        </ul>
+						</section><!--//docs-intro-->						
+						
+				    </header>
+				    <section class="docs-section" id="section-2">
+						<h2 class="section-heading">Admin Panel configuration</h2>
+						<p>Installing Admin Panel is an easy process and we will guide you through it.</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/admin-setup.mp4" data-title="Upload code on server" data-toggle="lightbox">
+						    	<video width="320" height="240" controls>
+						    	  <source src="assets/images/admin-setup.mp4" type="video/mp4">
+						    	  Your browser does not support the video tag.
+						    	</video>
+						    </a>
+						</figure>
+
+						<p><strong>Step 1 -</strong> Upload folder <strong>project</strong> in your hosting public_html directory  files which we have provided in your downloaded package from <strong>codecanyon</strong></p>
+
+						<p><strong>Step 2 -</strong> Login in your hosting cpanel Navigate to <em>File Manager</em> , upload the <strong>project.zip</strong> , then extract it </p>
+
+						<p><strong>Step 3 -</strong> For Database configurations You have to edit <strong>.env</strong> file</p>
+
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/envfile.png" data-title=".env File" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/envfile.png" alt="" style="width: 600px;">
+							</a>
+						</figure>
+
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/database.png" data-title=".env File" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/database.png" alt="" style="width: 600px;">
+							</a>
+						</figure>
+
+						<p>Now open admin panel through your domain  http://domain.com/folder-name and use login <strong>admin@gmail.com</strong> and password is <strong>123456</strong>  </p>
+                        <strong style="color: red;"><em>*Note: Make sure your SQL File has been imported & Database Connection successfully works</em></strong>
+                        
+                       
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">SQL Database Setup</h2>
+						<p><strong>Step 1 -</strong> You have to import the SQL file which we have provided in your downloaded package from <strong>codecanyon</strong></p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/importSQLfile.png" data-title="Import SQL file" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/importSQLfile.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Fill the database connection details in <strong>".env"</strong></p>
+                								
+						<code>
+							DB_DATABASE=DATABASE_NAME<br>
+							DB_USERNAME=DATABASE_USERNAME<br>
+							DB_PASSWORD=DATABASE_PASSWORD<br>
+						</code>
+						
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Google Maps Setup</h2>
+						<p><strong>Step 1 -</strong> Setup API Keys , Get Google Maps Api keys <a href="https://console.cloud.google.com/" target="_blank">Console Cloud Google</a> Make sure to enable this API for Android and PHP </p>
+						<strong style="color: red"><em>* Please add Payment method for use Google Map Key</em></strong>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/google_maps.png" data-title="Get map key" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/google_maps.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Add your Google Map Key here</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/mapkey.png" data-title="Get map key" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/mapkey.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Make sure to <strong>enable</strong> following API For Android and PHP</p>
+						<ul>
+							<li>Places API</li>
+							<li>Maps Javascript API</li>
+							<li>Geolocation API</li>
+						</ul>
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Firebase Setup</h2>
+						<p><strong>Step 1 -</strong> Setup Firebase project , Get Firebase Server keys <a href="https://console.firebase.google.com/" target="_blank">Console Cloud Firebase</a> Make sure to enable this API For Android and PHP </p>
+
+						<p>How to add Firebase Key <strong>"Click on Profile icon >> Click on Setting"</strong></p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/tutorial-1.png" data-title="Add Firebase server key in Admin" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/tutorial-1.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Add your Firebase Server key here</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/firebase-key.png" data-title="Add Firebase server key in Admin" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/firebase-key.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">Change Currency</h2>
+						<p>How to add your Currency <strong>"Click on Profile icon >> Click on Setting"</strong></p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/tutorial-1.png" data-title="Add Currency in Admin" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/tutorial-1.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Add your Currency here</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/currency.png" data-title="Add Currency in Admin" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/currency.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-5">
+						<h2 class="section-heading">Payment Method</h2>
+						<p>You can Activate OR Deactivate Payment Method <strong>Anytime</strong></p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/payment-status.png" data-title="Payment Method" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/payment-status.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>How to Change Stripe key <strong>"Click on Payment Method >> View"</strong></p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/stripe.png" data-title="Payment Method" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/stripe.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						
+						<p>Set your Strip Payment <b>"Environment"</b></p>
+						<ul>
+							<li><b>Sendbox</b> > Use for Testing Purpose</li>
+							<li><b>Production</b> > Use it for Live</li>
+						</ul>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/stripe-env.png" data-title="Payment Method" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/stripe-env.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						
+						<p>Add your Stripe key</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/stripe-key.png" data-title="Payment Method" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/stripe-key.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>How to Change Razorpay key <strong>"Click on Payment Method >> View"</strong></p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/razorpay.png" data-title="Payment Method" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/razorpay.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						
+						<p>Set your Razorpay Payment <b>"Environment"</b></p>
+						<ul>
+							<li><b>Sendbox</b> > Use for Testing Purpose</li>
+							<li><b>Production</b> > Use it for Live</li>
+						</ul>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/razorpay-env.png" data-title="Payment Method" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/razorpay-env.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						
+						<p>Add your Razorpay key</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/razorpay-key.png" data-title="Payment Method" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/razorpay-key.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-6">
+						<h2 class="section-heading">Change Timezone</h2>
+						<p>How to Set Timezone <strong>"Click on Profile icon >> Click on Setting"</strong></p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/tutorial-1.png" data-title="Change Timezone" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/tutorial-1.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Set your Timezone here</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/timezone.png" data-title="Change Timezone" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/timezone.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-7">
+						<h2 class="section-heading">Email Configuring</h2>
+						<p>If you are using gmail for email configuration. Follow this link "How to create Gmail App Password"
+							<a href="https://support.google.com/mail/answer/185833?hl=en" target="_blank">Click Here</a>
+						</p>
+						<strong style="color: red;"><em>*Note: Email Configuration is not a critical bug. If you unable to Configure You can take our Paid Support Contact us at <a href="mailto:infotechgravity@gmail.com">infotechgravity@gmail.com</a> (Email Configuration cost will be 30 USD)</em></strong>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/mail.png" data-title="Email Configuration" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/mail.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Fill your own Email Credentials in <strong>".env"</strong></p>
+    								
+						<code>
+						MAIL_USERNAME=YOUR_EMAIL_ADDRESS<br>
+						MAIL_PASSWORD=YOUR_EMAIL_APP_PASSWORD
+						</code>
+					</section><!--//section-->					
+			    </article>
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Install Android studio</h1>
+					    <section class="docs-intro">
+						    <p>In order to start configuring , you need to install Android studio and the 'Java SE Development Kit'. First download the android studio from here <a href="https://developer.android.com/studio/" target="_blank">Android Studio</a> </p>
+
+                                    
+                            <div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/xWa8Rf9cBps" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+						</section><!--//docs-intro-->
+				    </header>
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">SDK Manager</h1>
+					    <section class="docs-intro">
+						    <p>The installer , as also shown in the video should automatically download and install all required components . if you want to do manual setup , download at least the following components using the SDK manager </p>
+
+						    <ul>
+						        <li>SDK tools </li>
+						        <li>SDK platform Tools</li>
+						        <li>SDK Build Tools</li>
+						        <li>Google Play Services</li>
+						        <li>Android Support Library</li>
+						        <li>Google Repository</li>
+						        <li>Google USB Driver</li>
+						    </ul>
+
+						    <p>You can download these SDK , if not installed already , using the SDK manager <a href="https://developer.android.com/studio/intro/update.html#sdk-manager">SDK Manager</a> After you're done, you can open Android Studio and continue. </p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Importing Android Project</h2>
+						<p>To import the template, simply open Android Studio and import/open the template. Make sure to wait for all the processes (the Gradle Build) to complete before continuing to the next step</p>
+                                    
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/IsS0pmjOy-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                        <br><br>
+                        <h4 id="phainc-theme-addons">Addition steps</h4>
+                        <p>Addition steps Sometimes, the Gradle Build fails. In some cases additional components are needed, Android Studio will ask you to do download these additional SDK components in the 'messages' tab, simply follow the instructions provided to install and download the additional components. </p>
+					</section><!--//section-->
+
+			    </article><!--//docs-article-->
+
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">User App Configuration</h1>
+				    </header>
+
+				    <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Change App Name</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/APPName.png" data-title="Change App Name" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/APPName.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<p>Above images how you can change the name of the application. </p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Change Package Name</h2>
+						<div class="embed-responsive embed-responsive-16by9">
+                            <video width="320" height="240" controls>
+                              <source src="assets/images/ChangeApplicationId.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-3">
+						<h2 class="section-heading">Change Color Scheme</h2>
+						
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/Color_RTL(User).png" data-title="Change Color" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/Color_RTL(User).png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Above images how you can change the Colors of the application.</p>
+                        <p>You can change your apps colors to create a custom look. The primary color is the color of the Toolbar, some buttons and headers. The primary
+                        dark color is used for e.g. the status bar. get more color from here <a href="https://material.io/guidelines/style/color.html" target="_blank">material.io</a></p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-4">
+						<h2 class="section-heading">Change Theme of Application</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/Theme_of_Application_RTL(User).png" data-title="Change Theme" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/Theme_of_Application_RTL(User).png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+                                
+                        <p>Above images how you can change the Theme of the application.</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-5">
+						<h2 class="section-heading">Change App icon</h2>
+						
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/AppIcon.png" data-title="Change App Icon" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/AppIcon.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-6">
+						<h2 class="section-heading">Change API Links</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/ApiUrl.png" data-title="Change API URL" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/ApiUrl.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+                                
+                        <p>baseURL should be <strong>"YOUR_API_URL/api/"</strong> </p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-5-8">
+						<h2 class="section-heading">Change Firebase google services Json</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/FirebaseGoogle.png" data-title="Change Firebase google services Json" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/FirebaseGoogle.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">User App Social Login Configuration</h1>
+					    <section class="docs-intro">
+						    <p><strong style="color: red;"><em>*Note: Social Login Configuration is not a critical bug. If you unable to Configure You can take our Paid Support Contact us at <a href="mailto:infotechgravity@gmail.com">infotechgravity@gmail.com</a> (Email Configuration cost will be 30 USD)</em></strong></p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Change Facebook App ID</h2>
+						<p>Replace your Facebook App ID in this file</p>
+						<ul>
+						    <li>LoginActivity</li>
+						</ul>
+                                    
+                        <figure class="figure docs-figure py-3">
+						    <a href="assets/images/facebookappid1.png" data-title="Change Facebook App ID" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/facebookappid1.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Login With Google</h2>
+						<p>Enable Google Login Services from Firebase</p>
+                                    
+                        <figure class="figure docs-figure py-3">
+						    <a href="assets/images/googlelogin.png" data-title="Login With Google" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/googlelogin.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Replace your google services Json file here</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/FirebaseGoogle.png" data-title="Login With Google" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/FirebaseGoogle.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Driver App Configuration</h1>
+				    </header>
+
+				    <section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Change App Name</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/AppName_RTL(Driver).png" data-title="Change App Name" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/AppName_RTL(Driver).png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<p>Above images how you can change the name of the application. </p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Change Package Name</h2>
+						<div class="embed-responsive embed-responsive-16by9">
+                            <video width="320" height="240" controls>
+                              <source src="assets/images/ChangePackage.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-3">
+						<h2 class="section-heading">Change Color Scheme</h2>
+						
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/Color_RTL_Driver.png" data-title="Change Color" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/Color_RTL_Driver.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Above images how you can change the Colors of the application.</p>
+                        <p>You can change your apps colors to create a custom look. The primary color is the color of the Toolbar, some buttons and headers. The primary
+                        dark color is used for e.g. the status bar. get more color from here <a href="https://material.io/guidelines/style/color.html" target="_blank">material.io</a></p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-4">
+						<h2 class="section-heading">Change Theme of Application</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/Theme_of_Application_RTL(Driver).png" data-title="Change Theme" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/Theme_of_Application_RTL(Driver).png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+                                
+                        <p>Above images how you can change the Theme of the application.</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-7-5">
+						<h2 class="section-heading">Change App icon</h2>
+						
+						<p>Now we need to put a png file with your icon named 'ic_launcher.png' in the following folders: </p>
+						
+						<ul>
+						    <li>res/mipmap/ic_launcher/hdpi - with a size of 48px x 48px</li>
+						    <li>res/mipmap/ic_launcher/mdpi - with a size of 72px x 72px</li>
+						    <li>res/mipmap/ic_launcher/xhdpi - with a size of 96px x 96px</li>
+						    <li>res/mipmap/ic_launcher/xxhdpi - with a size of 144px x 144px</li>
+						    <li>res/mipmap/ic_launcher/xxxhdpi - with a size of 192px x 192px</li>
+						    <li>res/mipmap/ic_launcher/anydpi (v26)</li>
+						</ul>
+						
+						<p>this URL will help you resize your images or event create new icon to your app <a href="https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=clipart&foreground.clipart=android&foreground.space.trim=1&foreground.space.pad=0.25&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(68%2C%20138%2C%20255)&crop=0&backgroundShape=square&effects=none&name=ic_launcher" target="_blank">Launcher Icon Generator</a> </p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-7-6">
+						<h2 class="section-heading">Change API Links</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/ApiURL_Driver.png" data-title="Change API URL" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/ApiURL_Driver.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+                                
+                        <p>baseURL should be <strong>"YOUR_API_URL/api/"</strong> </p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+		        <article class="docs-article" id="section-8">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Firebase Configuration</h1>
+					    <section class="docs-intro">
+						    <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="1280" height="720" src="https://www.youtube.com/embed/CgfIf2wLQro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                            <p class="mt-3">Add all the application (If you already purchased Android and iOS) in one firebase project and keep in mind google json file should be download after you add the app into firebase.</p>
+						</section><!--//docs-intro-->
+				    </header>
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-9">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>App Develope in native or not?</h5>
+						<p>Yes, app is in native coding</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Admin Panel Develope in PHP?</h5>
+						<p>Yes, Admin Panel Develope in PHP (Laravel 7.0)</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Which PHP version?</h5>
+						<p>it will work on PHP 7.2  </p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Which Database You are using?</h5>
+						<p>We are using mysql database</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Does it have 3rd party services?</h5>
+						<p>
+								    
+						    Yes We are using these Thrid party services listed below
+						   <ul>
+								<li>Google services maps and for Login</li>
+								<li>Razorpay Payment Gatway</li>
+                                <li>Stripe Payment Gatway</li>
+								<li>Firebase It has Firebase Thrid party for send push notifications, Which is free but limited  , 
+						    after lot of users and usages you have to buy their packages  there are have 3 packages Free , $25 monthly , Pay As you go
+					        <a href="https://firebase.google.com/pricing/?authuser=0">See Firebase packages</a></li>
+                                <li>Facebook for Login with Facebook</li>
+							</ul>
+					    </p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Does it have Admin panel?</h5>
+						<p>Yes, Admin is in HTML/CSS and connected with datbase via PHP (Laravel)</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Does it have Documentation?</h5>
+						<p>Yes, it has Documentaion about android , admin panel setup , firebase push notification setup</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Which framework we are using for API?</h5>
+						<p>We are using Laravel 7.0</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Does it support other layouts (RTL)?</h5>
+						<p>Yes </p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Do you provide customization?</h5>
+						<p>Yes, we do but there will be an extra cost , contact us on our email infotechgravity@gmail.com </p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What it means when you see white page or error by going to this url http://domain.com/project/?</h5>
+						<p>If you see white page please make sure that your php version should be 7.2. you can change php version 7.2 by going into your hosting cpanel </p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <article class="docs-article">
+	    	        <section class="docs-intro">
+	    	    	    <p> I'd like to thank you again for your purchase and I hope you where able to successfully install the app and using it in your future business . If you need support or have some questions. You can visit our support resources here at <b style="color:#fc5a55;">infotechgravity@gmail.com</b> </p>
+	    	    	    <strong>What support does include</strong>
+	    	    	    <ul>
+	    	    	    	<li>Answers to (technical) questions about the item's features</li>
+	    	    	    	<li>Assistance with reported bugs and issues</li>
+	    	    	    	<li>Answers to questions about importing and setting up the item as is described in the docs.</li>
+	    	    	    </ul>
+	    	    	    
+	    	    	    
+	    	    	    <strong>Please note that support does not include:</strong>
+	    	    	    <ul>
+	    	    	    	<li>Customization &amp; adding new features</li>
+	    	    	    	<li>Installation services</li>
+	    	    	    	<li>Support for 3rd party software and/or plugins</li>
+	    	    	    	<li>Content related rejections and violations from Apple</li>
+	    	    	    
+	    	    	    </ul>
+	    	    	</section><!--//docs-intro-->
+		        </article>
+
+		        <footer class="footer">
+		    	    <div class="container text-center py-5">
+		    	        <small class="copyright">Designed & Developed by <a class="theme-link" href="https://infotechgravity.com" target="_blank">Gravity Infoteh</a></small>
+		    	        <a href="mailto:infotechgravity@gmail.com" class="cookieConsentOK">infotechgravity@gmail.com</a>
+		    	    </div>
+		        </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+

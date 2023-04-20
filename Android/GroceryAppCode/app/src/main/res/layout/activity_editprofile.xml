@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_gray"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/rlTitle">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_back"
+            android:id="@+id/ivBack"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            fontPath="@string/font_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/edit_profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textDirection="locale"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/rlTitle"
+        android:layout_marginTop="@dimen/_20sdp"
+        >
+        <RelativeLayout
+            android:layout_width="@dimen/_95sdp"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_gravity="center_horizontal">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:riv_oval="true"
+                android:scaleType="centerCrop"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="3dp"
+                android:src="@drawable/ic_placeholder"
+                android:id="@+id/ivProfile"
+                />
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivGellary"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:adjustViewBounds="true"
+                android:onClick="onClick"
+                app:riv_border_color="@color/white"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/bg_black_corner_10"
+                android:src="@drawable/ic_camera"
+                android:backgroundTint="@color/white" />
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:id="@+id/edEmailAddress"
+            fontPath="@string/font_medium"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_10sdp"
+            android:hint="@string/email_address"
+            android:textSize="@dimen/_12ssp"
+            android:editable="false"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            tools:ignore="MissingPrefix" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:id="@+id/edUserName"
+            fontPath="@string/font_medium"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_10sdp"
+            android:hint="@string/user_name"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:id="@+id/tvMobileNumber"
+            fontPath="@string/font_medium"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_10sdp"
+            android:hint="@string/mobile_number"
+            android:gravity="start|center_vertical"
+            android:editable="false"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:layout_marginTop="@dimen/_7sdp"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+    <TextView
+        fontPath="@string/font_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save"
+        android:onClick="onClick"
+        android:id="@+id/tvSave"
+        android:background="@color/colorPrimary"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:textDirection="locale"
+        android:textSize="@dimen/_14ssp"
+        tools:ignore="MissingPrefix" />
+
+
+</RelativeLayout>

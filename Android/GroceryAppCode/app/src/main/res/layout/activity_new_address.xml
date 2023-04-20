@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_gray"
+
+    tools:context=".activity.ActivityNewAddress">
+
+    <RelativeLayout
+        android:id="@+id/rlToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_minus1sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:layout_centerInParent="true"
+            fontPath="@string/font_thin"
+            android:text="@string/new_address"
+            android:textAllCaps="false"
+            android:id="@+id/tvAddressTitle"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtFullName"-->
+<!--            fontPath="@string/font_medium"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:ellipsize="end"-->
+<!--            android:paddingStart="@dimen/_10sdp"-->
+<!--            android:paddingEnd="@dimen/_10sdp"-->
+<!--            android:maxLines="1"-->
+<!--            android:inputType="text"-->
+<!--            android:imeOptions="actionGo"-->
+<!--            android:layout_height="@dimen/_35sdp"-->
+<!--            android:layout_marginTop="@dimen/_5sdp"-->
+<!--            android:layout_marginRight="@dimen/_10sdp"-->
+<!--            android:layout_marginLeft="@dimen/_10sdp"-->
+<!--            android:layout_marginBottom="@dimen/_5sdp"-->
+<!--            android:background="@drawable/bg_white_10"-->
+<!--            android:hint="@string/fullname"-->
+<!--            android:gravity="center_vertical|start"-->
+
+<!--            android:textAlignment="viewStart"-->
+<!--            android:textDirection="locale"-->
+<!--            android:textSize="@dimen/_10ssp"-->
+<!--            tools:ignore="MissingPrefix" />-->
+
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtPhoneNumber"-->
+<!--            fontPath="@string/font_medium"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:ellipsize="end"-->
+<!--            android:paddingStart="@dimen/_10sdp"-->
+<!--            android:paddingEnd="@dimen/_10sdp"-->
+<!--            android:maxLines="1"-->
+<!--            android:inputType="phone"-->
+<!--            android:imeOptions="actionGo"-->
+<!--            android:layout_height="@dimen/_35sdp"-->
+<!--            android:layout_marginTop="@dimen/_8sdp"-->
+<!--            android:layout_marginRight="@dimen/_10sdp"-->
+<!--            android:layout_marginLeft="@dimen/_10sdp"-->
+<!--            android:layout_marginBottom="@dimen/_5sdp"-->
+<!--            android:background="@drawable/bg_white_10"-->
+<!--            android:gravity="center_vertical|start"-->
+<!--            android:textAlignment="viewStart"-->
+<!--            android:textDirection="locale"-->
+<!--            android:hint="@string/phone_number"-->
+<!--            android:textSize="@dimen/_10ssp"-->
+<!--            tools:ignore="MissingPrefix" />-->
+
+
+        <TextView
+            android:id="@+id/tvAddressType"
+            fontPath="@string/font_medium"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:gravity="center_vertical|start"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:hint="@string/select_address_type"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="MissingPrefix" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/spAddressType"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:spinnerMode="dropdown"
+            android:background="@android:color/transparent"
+            />
+
+
+        <TextView
+            android:id="@+id/edtAddress"
+            fontPath="@string/font_medium"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:gravity="center_vertical|start"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:hint="@string/adres"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="MissingPrefix" />
+
+
+<!--        <Spinner-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:id="@+id/spPinCode"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:gravity="bottom"-->
+<!--            android:spinnerMode="dropdown"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            />-->
+        <EditText
+            android:id="@+id/edtDoorNo"
+            fontPath="@string/font_medium"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:gravity="center_vertical|start"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:hint="@string/flat_and_door"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="MissingPrefix" />
+
+
+
+        <EditText
+            android:id="@+id/edtLandMark"
+            fontPath="@string/font_medium"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:gravity="center_vertical|start"
+
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:hint="@string/landmark_add"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="MissingPrefix" />
+
+
+        <TextView
+            android:id="@+id/edtZipCode"
+            fontPath="@string/font_medium"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:gravity="center_vertical|start"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:textSize="@dimen/_10ssp"
+            android:hint="@string/neighborHood"
+            tools:ignore="MissingPrefix" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvSaveAddress"
+        fontPath="@string/font_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/save_address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textAllCaps="false"
+        tools:ignore="MissingPrefix" />
+</LinearLayout>
